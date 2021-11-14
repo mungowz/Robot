@@ -1,0 +1,100 @@
+<HTML>
+	<HEAD>
+		<TITLE>
+		Relazione 	ALFREDO MUNGARI
+		</TITLE>
+	</HEAD>
+	
+	<BODY BGCOLOR = "#000000" TEXT = "#008000">
+		<h2 ALIGN = "LEFT">Traccia 1: IL ROBOT</h2>
+		Simulare un algoritmo per la simulazione del movimento di un robot in una stanza.La stanza è pavimentata a tasselli quadrati ed è dotata di pareti esterne ed interne.Il 
+		robot si muove sempre solo di una casella alla volta, scelta tra una delle quattro caselle vicine. Il robot è in grado di “vedere”, cioè di stabilire, guardando in una 
+		delle quattro direzioni (avanti,indietro, sinistra, destra), quante sono le caselle libere (in linea retta) fino alla parete.La legge con cui il robot si muove è la 
+		seguente: nel 30% dei casi il robot si muove a caso in una delle quattro caselle vicine possibili (parete permettendo); nel 70% dei casi il robot prima “vede” e 
+		individua la direzione (avanti, indietro, sinistra, destra) del movimento (scegliendo quella cui corrisponde il percorso possibile più lungo; nel caso di più percorsi di 
+		massima lunghezza, la direzione viene scelta a caso tra questi) e poi si muove (sempre di un solo passo) in quella direzione. In ogni caso, il robot non deve mai fare un 
+		passo in una direzione e allo step successivo un passo nella direzione opposta. La simulazione termina quando il robot “esce dalla porta” della stanza.<br>
+		<h3>-Test 1: Primo percorso del robot</h3>
+		<img src="images\inizio.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\durante1.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\durante2.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\fine.png" WIDTH=50%></img>
+		<br><br>
+		Nel primo test del nostro robot possiamo notare le caratteristiche principali del programma,la prima che viene mostrata attraverso le immagini è la dinamicità della stanza
+		dato che la lunghezza e la profondità del robot vengono digitate dall'utente,sebbene i test saranno fatti solo su stanze 10x10 dato che il robot impiega molto tempo ad
+		arrivare all'uscita. Lo step successivo vede visualizzata la stanza con il robot (simbolo R) in essa posizionato in modo del tutto randomico. Successivamente il robot inizia 
+		a muoversi, il robot si muove secondo i criteri sopra descritti,infatti nel 70% dei casi scegliere la direzione più distante da un muro dalla sua posizione, nel 30% invece
+		scegliera randomicamente una delle quattro direzioni, si può notare che il robot non sceglierà mai la direzione opposta rispetto alla direzione scelta nello step precedente
+		(simboleggiata da S). All'arrivo del robot all'uscita verrà chiesto a quest'ultimo se simulare un nuovo percorso oppure terminare il programma.
+		<br>
+		<h3>-Test 2: Secondo percorso del robot</h3>
+		<img src="images\a1.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\b1.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\c1.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\d1.png" WIDTH=50%></img>
+		<br><br>	
+		<img src="images\e1.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\f1.png" WIDTH=50%></img>
+		<br><br>
+		Nel test numero 2 si può osservare come il robot e le pareti interne della stanza vengano piazzate in modo randomico addattandosi alle dimensioni della stanza. In questo 
+		il robot si ritrova ad affrontare un percorso più ostico e critico, infatti il numero di mosse che deve fare per raggiungere l'uscita è maggiore rispetto al test precedente.
+<		<br>
+		<h3>-Test 3: Terzo percorso del robot</h3>
+		<img src="images\a2.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\b2.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\c2.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\d2.png" WIDTH=50%></img>
+		<br><br>	
+		<img src="images\e2.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\f2.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\g2.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\h2.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\l2.png" WIDTH=50%></img>
+		<br><br> 
+		<img src="images\m2.png" WIDTH=50%></img>
+		<br><br> 
+		Nel test numero 3 oltre a a confermare la completa randomicità della stanza, della posizione del robot e la correttezza di questo nel muoversi secondo i criteri richiesti,
+		testiamo il robot in un percorso abbastanza complicato, infatti in un certo momento del suo itinerario il robot si sposta nel corridoio a destra come viene mostrato in
+		figura. Il robot continuerà a percorrere il corridoio fin quando trovatosi all'interno della stanza all'uscita di quest'ultimo, esso siccome non può nell'immediato tornare
+		sui suoi passi, cosa che comporterebbe percorrere la direzione opposta fatta nello step precedente, gira intorno alla stanza fino a ritrovare il corridoio il quale viene percorso
+		nuovamente. Il robot infine troverà dopo una serie di mosse nuovamente l'uscita.
+		<br>
+		<h3>-Test 4: Quarto percorso del robot</h3>
+		<img src="images\a3.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\b3.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\c3.png" WIDTH=50%></img>
+		<br><br>
+		In questo test possiamo notare il robot in uno dei due casi limite, cioè quando viene generata una parete che sbarra l'uscita al robot come si può evincere dalle foto. La 
+		simulazione del percorso del robot infatti è stata interrotta dato che altrimenti il robot si sarebbe continuato a muovere senza fine.
+		<br>
+		<h3>-Test 5: Quinto percorso del robot</h3>
+		<img src="images\a4.png" WIDTH=50%></img>
+		<br><br>
+		<img src="images\b4.png" WIDTH=50%></img>
+		<br><br>
+		Come ultimo test per quanto riguarda il nostro robot ci soffermiamo sul secondo caso limite del nostro robot, questo direttamente collegato con la natura dei movimenti del
+		robot. Quest'ultimo infatti non può scegliere la direzione opposta rispetto a quella scelta nello step precendete, in altre parole il robot non può tornare sui suoi passi,
+		ciò implica che nel caso in cui il robot si trovasse all'interno di un corridoio ampio una casella con un vicolo cieco alla fine significa non dare più possibilità al robot di
+		muoversi, per muoversi infatti dovrebbe fare un passo nella direzione opposta in cui è venuto, cosa che non può fare. Il tutto ,come mostrato dalle immagini, si traduce con la
+		fine dei movimenti del robot e l'auto-interruzione del programma.
+		<br>
+		<br>
+		Clicca <a href="index.html">qui</a> per ritornare alla schermata iniziale <br><br>
+	</BODY>
+</HTML>
